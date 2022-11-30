@@ -62,25 +62,25 @@ Save the changes----------------------------------------------------------------
 Setup the SPICE Models for the Generic_250nm_Devices kit.------------------------------------------------------------------------------------------------------
 ![19](https://user-images.githubusercontent.com/115934581/204842599-98672939-51ed-4e47-9c74-f09928d0bf94.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
-![20](https://user-images.githubusercontent.com/115934581/204842624-8340653d-8bce-452a-9655-c7a01b0d4d64.png)
-
------------------------------------------------------------------------------------------------------------------------------------------------------
 [The libraries that you just added have symbols for NMOS and PMOS transistors. However, all non-linear components such as MOS transistors require a model to describe their behavior. If you simply enter an NMOS symbol in your schematic, SPICE will not know what to do since each NMOS transistor fabricated in a different technology behave differently. In this example, we will use a transistor technology called “Generic_250nm_Devices”, which represents a standard, 250nm CMOS process. You will need to setup the SPICE models for this process in S-edit. Once you do that, when you enter an NMOS or PMOS transistor, you can then associate the 250nm model to that symbol.]
 -In the “Library Files” field, you will specify SPICE models you will be using in your simulations.
 -Select DC Sweep Analysis.
+![20](https://user-images.githubusercontent.com/115934581/204842624-8340653d-8bce-452a-9655-c7a01b0d4d64.png)
+
+Setup the Parameters that will be used during the DC sweep analysis---------------------------------------------------------------------------------
+
 ![21](https://user-images.githubusercontent.com/115934581/204842639-8cea9c44-53b6-4bd2-b1fa-013370c6bb8b.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+Setup the SPICE DC Sweep Analysis--------------------------------------------------------------------------------------------------------------------
 ![22](https://user-images.githubusercontent.com/115934581/204842674-8f972b2f-d377-4e6b-bbed-10283840ae31.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+- Clock on the Green Arrow to start the simulator----------------------------------------------------------------------------------------------------
 ![23](https://user-images.githubusercontent.com/115934581/204842704-62a34e9f-7ef7-4f55-b180-5f69b31966af.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+The T-Spice window will appear. If everything is OK, the waveform viewer will also appear. If everything worked, your waveforms should look like this
 ![24](https://user-images.githubusercontent.com/115934581/204842746-babee59b-44e0-4e63-9b9f-d760157dde10.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+View the Netlist-------------------------------------------------------------------------------------------------------------------------------------
 ![25](https://user-images.githubusercontent.com/115934581/204842782-90020e42-485c-4539-892b-f4e912fafcb5.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -89,4 +89,4 @@ Setup the SPICE Models for the Generic_250nm_Devices kit.-----------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ![27](https://user-images.githubusercontent.com/115934581/204842847-73b8f16e-04fc-442e-b80c-5c91323a148c.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------finish------------------- ------------------------------------------------
