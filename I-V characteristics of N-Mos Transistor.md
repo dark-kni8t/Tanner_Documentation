@@ -36,31 +36,39 @@ We will use a nmos from transistor technology called Generic_250nm_Devices------
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ![12](https://user-images.githubusercontent.com/115934581/204842394-ddb34e57-13d0-47ef-a053-19e9e3350ede.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+In V-property, We will enter a parameter name here and then set up the parameter later. When performing a DC sweep, you must use parameters for the sweep.
 ![13](https://user-images.githubusercontent.com/115934581/204842429-0bfd2e2a-1f33-40eb-9d2d-ac8d33190f42.png)
-
------------------------------------------------------------------------------------------------------------------------------------------------------
 ![14](https://user-images.githubusercontent.com/115934581/204842498-5505b4f7-a173-4b3d-8cd0-df2ce9262032.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+Enter a Current Probe to monitor IDS
+Enter the SPICE_Plot:I_DeviceTerminalPrint component. This doesn’t connect to anything.
+You just place it anywhere and then tell it what current to monitor in its properties dialog.--------------------------------------------------------
 ![15](https://user-images.githubusercontent.com/115934581/204842521-1ad0fd3c-261d-4fde-bcce-929fdfddd92c.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+In its properties dialog, setup:
+-Terminal: D (this is the Drain of the NMOS)
+-Device: MMn1 (this is the name of the device. Notice that we called it Mn1, but S-edit automatically appends another M to the name. You will only see this once you run the Netlist. If it doesn't append, then we have to append it ourselves. Else error occurs.)
+-Analysis: DC (VERY IMPORTANT TO SELECT THIS!!!!)----------------------------------------------------------------------------------------------------
 ![16](https://user-images.githubusercontent.com/115934581/204842537-3da009c2-c471-4054-b064-ec1b09f97c09.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+This is the circuit----------------------------------------------------------------------------------------------------------------------------------
+![17-1](https://user-images.githubusercontent.com/115934581/204842579-ded40909-9d6e-46c5-8fdb-f85971c9e20a.png)
+
+Save the changes-------------------------------------------------------------------------------------------------------------------------------------
 ![17](https://user-images.githubusercontent.com/115934581/204842551-64f16017-0139-418d-b4d4-55266b8e4ca2.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-![17-1](https://user-images.githubusercontent.com/115934581/204842579-ded40909-9d6e-46c5-8fdb-f85971c9e20a.png)
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+Setup the SPICE Models for the Generic_250nm_Devices kit.------------------------------------------------------------------------------------------------------
 ![19](https://user-images.githubusercontent.com/115934581/204842599-98672939-51ed-4e47-9c74-f09928d0bf94.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ![20](https://user-images.githubusercontent.com/115934581/204842624-8340653d-8bce-452a-9655-c7a01b0d4d64.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+[The libraries that you just added have symbols for NMOS and PMOS transistors. However, all non-linear components such as MOS transistors require a model to describe their behavior. If you simply enter an NMOS symbol in your schematic, SPICE will not know what to do since each NMOS transistor fabricated in a different technology behave differently. In this example, we will use a transistor technology called “Generic_250nm_Devices”, which represents a standard, 250nm CMOS process. You will need to setup the SPICE models for this process in S-edit. Once you do that, when you enter an NMOS or PMOS transistor, you can then associate the 250nm model to that symbol.]
+-In the “Library Files” field, you will specify SPICE models you will be using in your simulations.
+-Select DC Sweep Analysis.
 ![21](https://user-images.githubusercontent.com/115934581/204842639-8cea9c44-53b6-4bd2-b1fa-013370c6bb8b.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
