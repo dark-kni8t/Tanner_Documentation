@@ -74,7 +74,7 @@ Setup the Parameters that will be used during the DC sweep analysis-------------
 Setup the SPICE DC Sweep Analysis--------------------------------------------------------------------------------------------------------------------
 ![22](https://user-images.githubusercontent.com/115934581/204842674-8f972b2f-d377-4e6b-bbed-10283840ae31.png)
 
-- Clock on the Green Arrow to start the simulator----------------------------------------------------------------------------------------------------
+Click on the Green Arrow to start the simulator----------------------------------------------------------------------------------------------------
 ![23](https://user-images.githubusercontent.com/115934581/204842704-62a34e9f-7ef7-4f55-b180-5f69b31966af.png)
 
 The T-Spice window will appear. If everything is OK, the waveform viewer will also appear. If everything worked, your waveforms should look like this
