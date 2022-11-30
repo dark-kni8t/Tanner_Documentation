@@ -8,7 +8,10 @@ Open S-Edit---------------------------------------------------------------------
 Create New Library-----------------------------------------------------------------------------------------------------------------------------------
 ![2](https://user-images.githubusercontent.com/115934581/204841535-15f24d2b-174f-47ae-b8ba-07eb07b1e8c3.png)
 
+Avoid generic names like cmos,nmos etc
 ![3](https://user-images.githubusercontent.com/115934581/204841593-17f9bba1-6068-4f5b-8472-3838ee4690d3.png)
+
+
 ![4](https://user-images.githubusercontent.com/115934581/204841721-4875dad7-084f-4e6a-bb43-c8273c227d5b.png)
 ![5](https://user-images.githubusercontent.com/115934581/204841794-a4a49ce7-9171-4bde-aec9-f1533a3a3dd2.png)
 ![6](https://user-images.githubusercontent.com/115934581/204841854-b411b1c3-ff44-437a-88db-3d49d83780ef.png)
